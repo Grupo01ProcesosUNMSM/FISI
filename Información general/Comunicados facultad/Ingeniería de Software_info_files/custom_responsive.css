@@ -1,0 +1,158 @@
+ /*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla.com. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+ 
+@media screen and (max-width: 980px) {
+.top_menu_poz_navbar,
+ #mmenu_holder {
+	width: 280px!important;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+#default_video {
+	width: 100%!important;
+}
+}
+@media only screen and (min-width: 981px) and (max-width: 1199px) {
+.top_menu {
+	width: inherit!important;
+}
+}
+/* youdeveloper slider */
+@media only screen and (min-width: 220px) and (max-width: 1199px) {
+#Youdeveloperslider,
+ #Youdeveloperslider .slide,
+ #Youdeveloperslider .elements {
+	width: 100%!important;
+}
+#Youdeveloperslider .intro {
+	width: 50%!important;
+}
+#Youdeveloperslider .introimage {
+	width: 50%!important;
+}
+#Youdeveloperslider .intro .title {
+	line-height: 65px!important;
+	font-size: 300%!important;
+}
+#Youdeveloperslider .introimage img {
+	width: 100%!important;
+}
+}
+@media screen and (max-width: 880px) {
+.yjd_video {
+	width: 45%!important;
+}
+.yjd_video iframe,
+.yjd_video object {
+	width: 100%!important;
+}
+}
+ @media screen and (max-width: 780px) {
+#Youdeveloperslider .intro {
+	display: none!important;
+}
+#Youdeveloperslider .slide.slideHasVideo .intro {
+	display: block!important;
+}
+#Youdeveloperslider .introimage {
+	width: 100%!important;
+	float: none!important;
+	text-align: center;
+}
+}
+@media screen and (max-width: 620px) {
+#Youdeveloperslider .slide.slideHasVideo .yjd_video {
+	width: 100%!important;
+	margin-bottom: 200px!important;
+}
+#Youdeveloperslider .slide.slideHasVideo .yjd_video iframe,
+.yjd_video object {
+	width: 100%!important;
+}
+}
+/* Yjme Services */
+@media screen and (max-width: 979px) {
+.services .yjme_item {
+	float: none;
+	width: 100%;
+	clear: both;
+}
+}
+/*Get Notified*/
+@media screen and (max-width: 979px) {
+.getn  {
+	width:90%;
+	text-align:center;
+}
+#get_notified p{
+	text-align:center;
+	float:none;
+	clear:both;
+	width:100%;
+}
+#get_notified .inputbox{
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+}
+}
+@media screen and (max-width: 979px) {
+span.itemImage img,
+span.catItemImage img{
+	width:100%!important;
+	max-width:100%!important;
+}
+div.catItemReadMore,
+#k2Container.itemListView div.catItemCommentsLink a {
+	float:left;
+	clear:both;
+	margin:0 0 20px 0!important;
+}
+}
+
+
+.title, .component-content h2 {
+    text-transform: none !important;
+}
+
+.horiznav ul ul a {
+        text-decoration:none;
+        text-transform:none;
+        height:auto;
+        font-weight:normal;
+}
+
+span.yjm_desc {
+	display:block;
+	font-weight:normal;
+	font-size:11px;
+	line-height:10px;
+	text-transform:none;
+}
+
+/* Group holder title*/
+.group_holder li.haschild a,
+.group_holder li.haschild li.haschild .group_holder li.haschild a {
+	width:100%!important;
+	text-transform:none!important;*/
+	font-size:120%!important;
+}
+
+.subul_main.group_holder li.haschild .subul_main.group_holder li.haschild li a {
+	width:100%!important;
+	text-transform:uppercase!important; 
+	font-size:80%!important;
+}
+
+

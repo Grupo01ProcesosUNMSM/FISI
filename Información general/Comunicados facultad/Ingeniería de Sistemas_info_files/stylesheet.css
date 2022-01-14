@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'PTSansNarrowBold';
+	src: url('PTN77F-webfont.eot');
+	src: url('PTN77F-webfont.eot?#iefix') format('embedded-opentype'), url('PTN77F-webfont.woff') format('woff'), url('PTN77F-webfont.ttf') format('truetype'), url('PTN77F-webfont.svg#PTSansNarrowBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.article_title,
+.module_title,
+.pagetitle,
+div#Youdeveloperslider.ydpretium .elements div.title,
+.yjd_preadmore,
+.intro_paragraph,
+ .YouBricks_box_tools a,
+ .YouBricks_box_tools a:hover,
+ .YouBricks_box_tools a:focus,
+ a.item_title,	
+.YouBricks_content .YouBricks_box_in div.item_details,
+.YouBricks_content .YouBricks_box_in .item_readmore,
+.YouBricks_content .YouBricks_box_in .counters span,
+#load_more,
+.bottom_paragraph,
+.more_info,
+div.subCategory h2 a,
+a.subCategoryMore, a.subCategoryMore:visited,
+#k2Container .componentheading,
+#k2Container h3,
+.catItemReadMore,
+div.k2TagCloudBlock,
+div.itemHeader h2.itemTitle,
+#k2Container h2,.yjportfolioFilter,.yjportfolioCat,.itemDateExtraIn,.catItemTags,.k2ReadMore,a.readon,div.itemTagsBlock ul.itemTags li a{
+	font-weight: normal!important;
+	font-family: 'PTSansNarrowBold', Arial, sans-serif;
+}
+
+
