@@ -1,0 +1,136 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla.com. All Rights Reserved.            ||
+|| # Authors - Dragan Todorovic and Constantin Boiangiu                 ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+
+
+window.addEvent("load", function() {
+	
+	
+   $$('.hasEffect').each(function (el) {
+	   
+	   
+	   var findImage 	= el.getElement('img');
+	   var findIcon 	= el.getElement('.effIc');
+	   var getHeight	= el.getParent().getSize().y;
+	   var setTop 		= (getHeight / 2) - (findIcon.getSize().y / 2);
+
+			var fx = new Fx.Morph(findImage, {
+			  duration: 300,
+			  'link': 'cancel',
+			  transition: Fx.Transitions.linear
+			});
+			
+			var fx2 = new Fx.Morph(findIcon, {
+			  duration: 500,
+			  'link': 'cancel',
+			  transition:  Fx.Transitions.Back.easeOut
+			});
+			
+			el.addEvents({
+			  mouseenter: function () {
+				el.addClass('effectBg');
+				fx.start({
+				   opacity:[1,0.2]
+				});
+				fx2.start({
+				   top:[-60,setTop]
+				});
+			  },
+			  mouseleave: function () {
+				fx.start({
+				   opacity:[0.2,1]
+				});
+				fx2.start({
+				   top:[setTop,-60]
+				});
+			  }
+			});
+  });
+		
+
+	
+});
+
+jQuery.noConflict();
+(function($) {
+  $(function() {
+
+
+	if(bootstrapv =='bootstrapoff') return;
+	  			 
+	  var slider = $("#home3Carousel")
+		.carousel({
+			interval: 5000
+		})
+		.bind('slid', function () {
+			var index = $(this).find(".active").index();
+			$(this).find(".slider-pager a").removeClass('pager-active').eq(index).addClass('pager-active');
+		});
+	  $(".slider-pager a").click(function (e) {
+		var index = $(this).index();
+		slider.carousel(index);
+		e.preventDefault();
+	  });
+	  var fisrtHeight = $('.carousel-inner').outerHeight();
+	  $('#home3Carousel').bind('slide', function (e) {
+		var next_h = $(e.relatedTarget).outerHeight();
+		if (next_h == null) {
+			next_h = fisrtHeight;
+		}
+		$(this).animate({
+			height: next_h
+		});
+	  });
+
+			
+			
+			
+			
+			
+				//});
+
+
+/*$(document).ready(function () {
+    $('.carousel').carousel({
+        interval: 7000
+    }).on('slide', function (event) {
+        var nheight = $(this.relatedTarget).outerHeight();
+		console.log(nheight);
+        $(this).find('.active').animate({height:nheight},500);
+    });
+});	  
+	*/			//});
+/*			$(document).ready(function() {
+			 
+				var imageHeight, wrapperHeight, overlap, container = $('.image-wrap');  
+			 
+				function centerImage() {
+					imageHeight = container.find('img').height();
+					wrapperHeight = container.height();
+					overlap = (wrapperHeight - imageHeight) / 2;
+					container.find('img').css('margin-top', overlap);
+				}
+				 
+				$(window).on("load resize", centerImage);
+				 
+				var el = $('.image-wrap');
+				if (el.addEventListener) {  
+					el.addEventListener("webkitTransitionEnd", centerImage, false); // Webkit event
+					el.addEventListener("transitionend", centerImage, false); // FF event
+					el.addEventListener("oTransitionEnd", centerImage, false); // Opera event
+				}
+			 
+			});*/
+  });
+})(jQuery);
